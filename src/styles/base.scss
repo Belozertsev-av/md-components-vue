@@ -25,7 +25,7 @@
   --md-color-on-surface-variant: rgb(68 72 61);
   --md-color-outline: rgb(117 121 108);
   --md-color-outline-variant: rgb(197 200 186);
-  --md-color-shadow: rgba(0, 0, 0, 0.38);
+  --md-color-shadow: rgba(0, 0, 0, 0.2);
   --md-color-scrim: rgb(0 0 0);
   --md-color-inverse-surface: rgb(47 49 42);
   --md-color-inverse-on-surface: rgb(241 242 230);
@@ -116,4 +116,8 @@
   --md-line-height-label-small: 1rem;       /* 16px */
 
   --md-transition-base: all 0.2s ease-in-out;
+
+  --md-elevation-layer-1: 0.1rem 0.1rem 0.2rem var(--md-color-shadow);
+  --md-elevation-layer-2: 0.2rem 0.2rem 0.3rem var(--md-color-shadow);
+  --md-elevation-layer-3: 0.3rem 0.3rem 0.4rem var(--md-color-shadow);
 }

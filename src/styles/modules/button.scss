@@ -1,11 +1,6 @@
 @use '../action-states' as util;
 
-// Sizes
-.extra-small-button {
-  height: var(--md-spacing-7);
-  padding: 0 var(--md-spacing-3);
-}
-
+// Sizes button
 .small-button {
   height: var(--md-spacing-8);
   padding: 0 var(--md-spacing-4);
@@ -21,14 +16,174 @@
   padding: 0 var(--md-spacing-6);
 }
 
-.extra-large-button {
-  height: var(--md-spacing-11);
-  padding: 0 var(--md-spacing-7);
+// Sizes icon-button
+.small-icon-button {
+  height: var(--md-spacing-8);
+  width: var(--md-spacing-8);
+}
+
+.medium-icon-button {
+  height: var(--md-spacing-9);
+  width: var(--md-spacing-9);
+}
+
+.large-icon-button {
+  height: var(--md-spacing-10);
+  width: var(--md-spacing-10);
+}
+
+// Types button
+.primary-button {
+  &.filled {
+    background-color: var(--md-color-primary);
+    color: var(--md-color-on-primary);
+
+    &.loading {
+      color: var(--md-color-on-primary);
+
+      &.filled:after {
+        background-color: var(--md-color-primary);
+      }
+    }
+
+    &.round-button {
+      @include util.action-states(var(--md-color-on-primary), var(--md-corner-full))
+    }
+    &.rounded-square-button {
+      @include util.action-states(var(--md-color-on-primary), var(--md-corner-medium))
+    }
+    &.square-button {
+      @include util.action-states(var(--md-color-on-primary), var(--md-corner-small))
+    }
+  }
+
+  &.tonal {
+    background-color: var(--md-color-primary-container);
+    color: var(--md-color-on-primary-container);
+
+    &.loading {
+      color: var(--md-color-on-primary-container);
+
+      &.tonal:after {
+        background-color: var(--md-color-primary-container);
+      }
+    }
+
+    &.round-button {
+      @include util.action-states(var(--md-color-on-primary-container), var(--md-corner-full))
+    }
+    &.rounded-square-button {
+      @include util.action-states(var(--md-color-on-primary-container), var(--md-corner-medium))
+    }
+    &.square-button {
+      @include util.action-states(var(--md-color-on-primary-container), var(--md-corner-small))
+    }
+  }
+}
+
+.secondary-button {
+  &.filled {
+    background-color: var(--md-color-secondary);
+    color: var(--md-color-on-secondary);
+
+    &.loading {
+      color: var(--md-color-on-secondary);
+
+      &.filled:after {
+        background-color: var(--md-color-secondary);
+      }
+    }
+
+    &.round-button {
+      @include util.action-states(var(--md-color-on-secondary), var(--md-corner-full))
+    }
+    &.rounded-square-button {
+      @include util.action-states(var(--md-color-on-secondary), var(--md-corner-medium))
+    }
+    &.square-button {
+      @include util.action-states(var(--md-color-on-secondary), var(--md-corner-small))
+    }
+  }
+
+  &.tonal {
+    background-color: var(--md-color-secondary-container);
+    color: var(--md-color-on-secondary-container);
+
+    &.loading {
+      color: var(--md-color-on-secondary-container);
+
+      &.tonal:after {
+        background-color: var(--md-color-secondary-container);
+      }
+    }
+
+    &.round-button {
+      @include util.action-states(var(--md-color-on-secondary-container), var(--md-corner-full))
+    }
+    &.rounded-square-button {
+      @include util.action-states(var(--md-color-on-secondary-container), var(--md-corner-medium))
+    }
+    &.square-button {
+      @include util.action-states(var(--md-color-on-secondary-container), var(--md-corner-small))
+    }
+  }
+}
+
+.tertiary-button {
+  &.filled {
+    background-color: var(--md-color-tertiary);
+    color: var(--md-color-on-tertiary);
+
+    &.loading {
+      color: var(--md-color-on-tertiary);
+
+      &.filled:after {
+        background-color: var(--md-color-tertiary);
+      }
+    }
+
+    &.round-button {
+      @include util.action-states(var(--md-color-on-tertiary), var(--md-corner-full))
+    }
+    &.rounded-square-button {
+      @include util.action-states(var(--md-color-on-tertiary), var(--md-corner-medium))
+    }
+    &.square-button {
+      @include util.action-states(var(--md-color-on-tertiary), var(--md-corner-small))
+    }
+  }
+
+  &.tonal {
+    background-color: var(--md-color-tertiary-container);
+    color: var(--md-color-on-tertiary-container);
+
+    &.loading {
+      color: var(--md-color-on-tertiary-container);
+
+      &.tonal:after {
+        background-color: var(--md-color-tertiary-container);
+      }
+    }
+
+    &.round-button {
+      @include util.action-states(var(--md-color-on-tertiary-container), var(--md-corner-full))
+    }
+    &.rounded-square-button {
+      @include util.action-states(var(--md-color-on-tertiary-container), var(--md-corner-medium))
+    }
+    &.square-button {
+      @include util.action-states(var(--md-color-on-tertiary-container), var(--md-corner-small))
+    }
+  }
 }
 
 // Shape
 .round-button {
   border-radius: var(--md-corner-full);
+}
+
+.rounded-square-button {
+  border-radius: var(--md-corner-medium);
 }
 
 .square-button {
@@ -68,6 +223,9 @@
   &.round-button:after {
     border-radius: var(--md-corner-full);
   }
+  &.rounded-square-button:after {
+    border-radius: var(--md-corner-medium);
+  }
   &.square-button:after {
     border-radius: var(--md-corner-small);
   }
@@ -77,7 +235,7 @@
 .elevated {
   background-color: var(--md-color-surface-container-low);
   color: var(--md-color-primary);
-  box-shadow: 0.1rem 0.1rem 0.2rem var(--md-color-shadow);
+  box-shadow: var(--md-elevation-layer-1);
   transition: var(--md-transition-base);
 
   &:disabled {
@@ -91,6 +249,9 @@
 
   &.round-button {
     @include util.action-states(var(--md-color-primary), var(--md-corner-full))
+  }
+  &.rounded-square-button {
+    @include util.action-states(var(--md-color-primary), var(--md-corner-medium))
   }
   &.square-button {
     @include util.action-states(var(--md-color-primary), var(--md-corner-small))
@@ -117,6 +278,9 @@
   &.round-button {
     @include util.action-states(var(--md-color-on-surface-variant), var(--md-corner-full))
   }
+  &.rounded-square-button {
+    @include util.action-states(var(--md-color-on-surface-variant), var(--md-corner-medium))
+  }
   &.square-button {
     @include util.action-states(var(--md-color-on-surface-variant), var(--md-corner-small))
   }
@@ -141,6 +305,9 @@
 
   &.round-button {
     @include util.action-states(var(--md-color-on-secondary-container), var(--md-corner-full))
+  }
+  &.rounded-square-button {
+    @include util.action-states(var(--md-color-on-secondary-container), var(--md-corner-medium))
   }
   &.square-button {
     @include util.action-states(var(--md-color-on-secondary-container), var(--md-corner-small))
@@ -169,6 +336,9 @@
   &.round-button {
     @include util.action-states(var(--md-color-on-surface-variant), var(--md-corner-full))
   }
+  &.rounded-square-button {
+    @include util.action-states(var(--md-color-on-surface-variant), var(--md-corner-medium))
+  }
   &.square-button {
     @include util.action-states(var(--md-color-on-surface-variant), var(--md-corner-small))
   }
@@ -193,6 +363,9 @@
 
   &.round-button {
     @include util.action-states(var(--md-color-on-secondary-container), var(--md-corner-full))
+  }
+  &.rounded-square-button {
+    @include util.action-states(var(--md-color-on-secondary-container), var(--md-corner-medium))
   }
   &.square-button {
     @include util.action-states(var(--md-color-on-secondary-container), var(--md-corner-small))

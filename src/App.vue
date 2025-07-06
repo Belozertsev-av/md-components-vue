@@ -1,14 +1,13 @@
 <template>
   <icons />
-  <buttons variant="elevated" />
-  <buttons variant="filled" />
-  <buttons variant="tonal" />
-  <buttons variant="text" />
-  <buttons variant="outlined" />
+  <fabs
+    variant="tonal"
+    type="tertiary"
+  />
 </template>
 <script setup lang="ts">
   import Icons from "./icons/icons.vue"
-  import Buttons from "@/demo/buttons.vue"
+  import Fabs from "@/demo/fabs.vue"
 </script>
 
 <style lang="scss" scoped>

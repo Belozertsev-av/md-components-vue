@@ -1,3 +1,5 @@
 export const DEFAULT_VARIANT = "filled"
 export const DEFAULT_SIZE = "medium"
 export const DEFAULT_SHAPE = "round"
+export const DEFAULT_FAB_TYPE = "primary"
+export const DEFAULT_FAB_POSITION = "bottom-right"

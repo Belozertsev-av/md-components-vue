@@ -36,3 +36,7 @@
     loading?: boolean
   }>()
 </script>
+
+<style lang="scss">
+  @use "styles/modules/button" as *;
+</style>

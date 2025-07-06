@@ -1,7 +1,7 @@
 @use "./reset_styles.css" as *;
 @use "./base" as *;
 @use './modificators' as *;
-@use './modules/button' as *;
+@use './animations' as *;
 
 html {
   font-family: 'Roboto', sans-serif;

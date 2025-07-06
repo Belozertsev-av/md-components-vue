@@ -74,5 +74,6 @@
 </script>
 
 <style lang="scss">
+  @use "styles/modules/button" as *;
   @use "styles/modules/fab" as *;
 </style>

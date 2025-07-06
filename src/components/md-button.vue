@@ -45,3 +45,7 @@
     appendIcon?: MdIconName
   }>()
 </script>
+
+<style lang="scss">
+  @use "styles/modules/button" as *;
+</style>

@@ -1,0 +1,10 @@
+.fade-list-enter-active,
+.fade-list-leave-active {
+  transition: var(--md-transition-base);
+  opacity: 1;
+}
+
+.fade-list-enter-from,
+.fade-list-leave-to {
+  opacity: 0;
+}

@@ -1,13 +1,10 @@
 <template>
   <icons />
-  <fabs
-    variant="tonal"
-    type="tertiary"
-  />
+  <fabs-menu />
 </template>
 <script setup lang="ts">
   import Icons from "./icons/icons.vue"
-  import Fabs from "@/demo/fabs.vue"
+  import FabsMenu from "@/demo/fabs-menu.vue"
 </script>
 
 <style lang="scss" scoped>

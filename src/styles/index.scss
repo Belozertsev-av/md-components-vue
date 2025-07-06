@@ -1,0 +1,11 @@
+@use "./reset_styles.css" as *;
+@use "./base" as *;
+@use './modificators' as *;
+@use './modules/button' as *;
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: var(--md-color-on-surface);
+}
+

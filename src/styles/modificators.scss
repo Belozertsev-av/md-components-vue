@@ -1,0 +1,109 @@
+/* Display Styles */
+.md-text-display-large {
+  font-size: var(--md-font-display-large);
+  line-height: var(--md-line-height-display-large);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+
+.md-text-display-medium {
+  font-size: var(--md-font-display-medium);
+  line-height: var(--md-line-height-display-medium);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.md-text-display-small {
+  font-size: var(--md-font-display-small);
+  line-height: var(--md-line-height-display-small);
+  font-weight: 400;
+  letter-spacing: 0.007em;
+}
+
+/* Headline Styles */
+.md-text-headline-large {
+  font-size: var(--md-font-headline-large);
+  line-height: var(--md-line-height-headline-large);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.md-text-headline-medium {
+  font-size: var(--md-font-headline-medium);
+  line-height: var(--md-line-height-headline-medium);
+  font-weight: 400;
+  letter-spacing: 0.007em;
+}
+
+.md-text-headline-small {
+  font-size: var(--md-font-headline-small);
+  line-height: var(--md-line-height-headline-small);
+  font-weight: 400;
+  letter-spacing: 0.009em;
+}
+
+/* Title Styles */
+.md-text-title-large {
+  font-size: var(--md-font-title-large);
+  line-height: var(--md-line-height-title-large);
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.md-text-title-medium {
+  font-size: var(--md-font-title-medium);
+  line-height: var(--md-line-height-title-medium);
+  font-weight: 500;
+  letter-spacing: 0.006em;
+}
+
+.md-text-title-small {
+  font-size: var(--md-font-title-small);
+  line-height: var(--md-line-height-title-small);
+  font-weight: 500;
+  letter-spacing: 0.008em;
+}
+
+/* Body Styles */
+.md-text-body-large {
+  font-size: var(--md-font-body-large);
+  line-height: var(--md-line-height-body-large);
+  font-weight: 400;
+  letter-spacing: 0.016em;
+}
+
+.md-text-body-medium {
+  font-size: var(--md-font-body-medium);
+  line-height: var(--md-line-height-body-medium);
+  font-weight: 400;
+  letter-spacing: 0.008em;
+}
+
+.md-text-body-small {
+  font-size: var(--md-font-body-small);
+  line-height: var(--md-line-height-body-small);
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
+
+/* Label Styles */
+.md-text-label-large {
+  font-size: var(--md-font-label-large);
+  line-height: var(--md-line-height-label-large);
+  font-weight: 500;
+  letter-spacing: 0.006em;
+}
+
+.md-text-label-medium {
+  font-size: var(--md-font-label-medium);
+  line-height: var(--md-line-height-label-medium);
+  font-weight: 500;
+  letter-spacing: 0.031em;
+}
+
+.md-text-label-small {
+  font-size: var(--md-font-label-small);
+  line-height: var(--md-line-height-label-small);
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}

@@ -1,0 +1,26 @@
+{
+  "singleQuote": false,
+  "semi": false,
+  "trailingComma": "all",
+  "printWidth": 100,
+  "tabWidth": 2,
+  "useTabs": false,
+  "bracketSpacing": true,
+  "arrowParens": "avoid",
+  "vueIndentScriptAndStyle": true,
+  "vueSingleAttributePerLine": true,
+  "overrides": [
+    {
+      "files": "*.vue",
+      "options": {
+        "parser": "vue",
+        "vueIndentScriptAndStyle": true,
+        "singleAttributePerLine": true
+      }
+    }
+  ],
+  "bracketSameLine": false,
+  "htmlWhitespaceSensitivity": "ignore",
+  "vueHtmlIndentScriptAndStyle": true,
+  "vueCustomBlocksIndentScriptAndStyle": true
+}

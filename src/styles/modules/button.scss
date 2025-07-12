@@ -1,5 +1,12 @@
 @use '../action-states' as util;
 
+.md-button {
+  transition: var(--md-transition-base);
+  svg {
+    transition: var(--md-transition-base);
+  }
+}
+
 // Sizes button
 .small-button {
   height: var(--md-spacing-8);

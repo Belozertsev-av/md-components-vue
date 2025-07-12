@@ -2,6 +2,8 @@ import type { MdIconName } from "@/icons"
 
 export type MdVariant = "elevated" | "filled" | "tonal" | "outlined" | "text"
 
+export type MdSplitButtonVariant = "elevated" | "filled" | "tonal" | "outlined"
+
 export type MdFabVariant = "tonal" | "filled"
 
 export type MdFabType = "primary" | "secondary" | "tertiary"
